@@ -1,17 +1,186 @@
-# Title
+# Queue Interface
 
 ## Learning Objectives
 
-By the end of this lesson you will be able to:
+By the end of this module, students will be able to...
 
-* First Objective
-* [at least one]
-* [no more than four]
+* **Define** the term interface and related keywords
+* **Identify** questions to ask when designing an interface
+* **Describe** the interface of a queue
+* **Differentiate** between queries and commands
 
 ## Lesson Content
 
-[Can be written content, videos, slides, images, gifs, etc. Think about including a rationale as the first few sentences/paragraph if you feel the lesson requires significant motivation or context. Examples of markdown formatting are at https://learn-2.galvanize.com/cohorts/667/blocks/13/content_files/walkthrough/03b-markdown-examples.md]
+https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9c6d03be-87b4-4884-8555-abb30039ecb7
 
 ## Challenges
 
-[It's recommended that each lesson has at least one challenge. Challenges make the content interactive and give instructors visibility into student learning. These challenge can be spread out in between content, or can be at the end of the lesson. Examples of all challenge types are in this unit -- https://learn-2.galvanize.com/cohorts/667/blocks/13/content_files/Multiple-Choice-Challenge.md]
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: checkbox
+* id: ac18876a-10d0-4f7b-9500-aaa7970bedd9
+* title: Interface considerations
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+
+##### !question
+
+Which of the following are things we should consider when talking about an interface?
+
+##### !end-question
+
+##### !options
+
+* What types of records are being stored
+* How records will be organized in memory
+* How client code will interact with the data structure
+* Whether interactions are queries or commands
+* How specific interactions will be implemented
+* What patterns might appear in client workflows
+* Any specific performance requirements
+
+##### !end-options
+
+##### !answer
+
+* What types of records are being stored
+* How client code will interact with the data structure
+* Whether interactions are queries or commands
+* What patterns might appear in client workflows
+* Any specific performance requirements
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, users can see after a failed attempt) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: multiple-choice
+* id: e16199f7-67da-4379-a62b-66318dd57855
+* title: Queue records
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+
+##### !question
+
+
+What type of records does the queue interface store?
+
+##### !end-question
+
+##### !options
+
+* Individual elements
+* Key-value pairs
+* JSON documents
+* None of the above
+
+##### !end-options
+
+##### !answer
+
+* Individual elements
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, users can see after a failed attempt) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: multiple-choice
+* id: 80303c50-e61a-4679-9a10-e11563a8c4f1
+* title: Dequeue order
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+
+##### !question
+
+
+In what order are elements dequeued from a queue?
+
+##### !end-question
+
+##### !options
+
+* Alphabetical
+* Newest first
+* Oldest first
+* Order doesn't matter
+
+##### !end-options
+
+##### !answer
+
+* Oldest first
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, users can see after a failed attempt) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: multiple-choice
+* id: 5b9f7fad-b46f-485e-8a8d-4755d3e08c6d
+* title: Cancelation
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+
+##### !question
+
+How is an element canceled from a queue?
+
+##### !end-question
+
+##### !options
+
+* The client passes in the element to cancel
+* The client passes in a cancelation ticket, an opaque object returned from enqueue
+* The client passes in the index of the element
+* The newest element is canceled
+
+##### !end-options
+
+##### !answer
+
+* The client passes in a cancelation ticket, an opaque object returned from enqueue
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, users can see after a failed attempt) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
