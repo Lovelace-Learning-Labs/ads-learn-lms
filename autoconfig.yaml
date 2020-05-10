@@ -42,3 +42,30 @@ Standards:
         Type: Lesson
         UID: a3e8cc0143bdbf079ca93651fde4317a
         Path: /01-linear-data-structures/07-dllqueue.md
+  -
+    Title: Binary Search Trees
+    Description: Binary Search Trees
+    UID: e2624d1071a3a1d57e8b2c0887f210ee
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 33a4772244cfd8306679ead015b6067b
+        Path: /02-binary-search-trees/01-intro.md
+      -
+        Type: Lesson
+        UID: b5b8d3dcc02406fcb6cd603ba42c0548
+        Path: /02-binary-search-trees/02-orderd-dictionary.md
+      -
+        Type: Lesson
+        UID: f184fe3a7a793156ee1fdfb743b05482
+        Path: /02-binary-search-trees/03-BST-design.md
+      -
+        Type: Lesson
+        UID: 831f92566ede5e074ec4a227c2d90db5
+        Path: /02-binary-search-trees/04-BST-implementation-analysis.md
+      -
+        Type: Lesson
+        UID: 873ad1d341b823ca370a920baa778ad8
+        Path: /02-binary-search-trees/05-red-black-trees.md
