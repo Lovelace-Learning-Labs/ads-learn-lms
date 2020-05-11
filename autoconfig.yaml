@@ -65,7 +65,14 @@ Standards:
         Type: Lesson
         UID: 831f92566ede5e074ec4a227c2d90db5
         Path: /02-binary-search-trees/04-BST-implementation-analysis.md
+  -
+    Title: Red Black Trees
+    Description: Red Black Trees
+    UID: 9bcfe7bbf6ac96c0a597a4d2db7338fe
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
       -
         Type: Lesson
-        UID: 873ad1d341b823ca370a920baa778ad8
-        Path: /02-binary-search-trees/05-red-black-trees.md
+        UID: e1f7fcdc936e210e4bd8b7fd7ba9db46
+        Path: /03-red-black-trees/05-red-black-trees.md
