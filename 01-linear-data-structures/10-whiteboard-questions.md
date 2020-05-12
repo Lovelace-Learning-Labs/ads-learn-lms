@@ -2,13 +2,18 @@
 
 ## Linear Data Structures
 
+### Instructions
+
 For each question:
 
 - Design an algorithm that solves the problem
 - Pseudocode your algorithm
 - Identify interesting test cases and run them by hand
 - Analyze the time and space complexities of the algorithm
-- Implement your algorithm in JavaScript to check your work
+- Implement your algorithm (including tests) in JavaScript to check your work
+- Find a solution online, and check that you were on the right track
+
+### Questions
 
 1. Find the `k`th node from the end of a singly-linked list
 1. Rotate a linked list (forward / backward, singly- / doubly-linked)

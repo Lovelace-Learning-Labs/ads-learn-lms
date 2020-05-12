@@ -8,6 +8,17 @@
 ---
 Standards:
   -
+    Title: Course Info
+    Description: Course Info
+    UID: 33fac1d65895b1255332325e7b1cf507
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 7e0185ed69982212593e32d19eebf8b1
+        Path: /00-course-info/01-about.md
+  -
     Title: Linear Data Structures
     Description: Linear Data Structures
     UID: 61d1202b3ecf2d300aef10c8b07f5432
@@ -42,6 +53,18 @@ Standards:
         Type: Lesson
         UID: a3e8cc0143bdbf079ca93651fde4317a
         Path: /01-linear-data-structures/07-dllqueue.md
+      -
+        Type: Lesson
+        UID: 25252cdcac048e696dc4b28621589d5a
+        Path: /01-linear-data-structures/08-discussion-questions.md
+      -
+        Type: Lesson
+        UID: 2c1a2abd72529687a3d20c34052dd2db
+        Path: /01-linear-data-structures/09-lab.md
+      -
+        Type: Lesson
+        UID: b412240dffe506244b33f46633318dbc
+        Path: /01-linear-data-structures/10-whiteboard-questions.md
   -
     Title: Binary Search Trees
     Description: Binary Search Trees
