@@ -9,12 +9,12 @@ Here are some key resources that will be useful to you during this course:
 Instructor: Dan Roberts
 - Email: dan@adadev.org
 - Slack handle: @dan
-- Office hours: Wed / Fri 3:30 - 6 ([via Zoom](https://us02web.zoom.us/j/86242543451?pwd=ams4eXFaRmtCMjZTOGNQdVR4NTQ1UT09)), or by appointment
+- Office hours: Wed / Fri 3:30 - 6 via Zoom, or by appointment
 
 Zoom Links
-- [Tuesday/Thursday](https://us02web.zoom.us/j/86079700972?pwd=SlRnQVRTMHBGajBqZVNkMnh2aVdlUT09) - meeting ID `860 7970 0972`
-- [Saturday](https://us02web.zoom.us/j/87820516021?pwd=QXgzSUJwR1hDRzZQQmlVYzZMaHZqdz09) - meeting ID `878 2051 6021`
-- [Office Hours](https://us02web.zoom.us/j/86242543451?pwd=ams4eXFaRmtCMjZTOGNQdVR4NTQ1UT09)
+- [Tuesday/Thursday](https://zoom.us/j/98841433772?pwd=QTZleW9WeCtTNXZ5VTU5cTQ4VjVSZz09) - meeting ID `988 4143 3772`
+- [Saturday](https://zoom.us/j/95954201575?pwd=dWlwWGt3cWZqWU9lQjlrRzdhaVdWZz09) - meeting ID `959 5420 1575`
+- [Office Hours](https://zoom.us/j/95348828788?pwd=RFMvOWUyb09RT21RSy9kTzQwRFpVUT09) - meeting ID `953 4882 8788`
 - Meeting password will be sent to you via email
 - We recommend being online and ready to go 5 minutes before class starts, so that you can debug any technical issues that arise
 
@@ -27,7 +27,7 @@ Zoom Links
 [Slack Workspace](https://ada-ads-spring-2020.slack.com)
 - Useful for ad-hoc questions and conversation between students
 
-[Curriculum](https://learn-2.galvanize.com/cohorts/2000)
+[Curriculum - Learn LMS](https://learn-2.galvanize.com/cohorts/2000)
 - This website
 - We are licensing Learn LMS from Galvanize. Isn't it fancy?
 - We're using this course as a test platform before migrating the full classroom curriculum here. That means there might be some stumbling blocks. If something doesn't work well, let us know - there's a good chance we can fix it and save someone else some pain in the future!
@@ -36,6 +36,8 @@ Lesson Recordings on Panopto
 - Linked at the top of each lesson in Learn
 
 ## Challenges
+
+Read through the syllabus and the above information, then answer the following questions
 
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 <!-- Replace everything in square brackets [] and remove brackets  -->
