@@ -15,8 +15,8 @@ For each question:
 
 ### Questions
 
-1. Write a function to determine the _height_ of a BST
+1. Write a function to determine the height of a BST
 1. Write a function to determine whether a BST is perfectly balanced, mostly balanced or unbalanced
 1. Write a function to get a list of keys at a given depth in a BST
 1. Write a function to print a BST to the terminal
-1. Write functions to _serialize_ and _deserialize_ a BST
+1. Write functions to serialize and deserialize a BST
