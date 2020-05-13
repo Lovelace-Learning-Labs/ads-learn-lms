@@ -101,5 +101,25 @@ Standards:
     ContentFiles:
       -
         Type: Lesson
-        UID: e1f7fcdc936e210e4bd8b7fd7ba9db46
-        Path: /03-red-black-trees/05-red-black-trees.md
+        UID: ef00a9385dc3dafedbf1d4603cbf446c
+        Path: /03-red-black-trees/02-red-black-tree-rules.md
+      -
+        Type: Lesson
+        UID: 3162bb70b01fdeff7877d2184b86c6b7
+        Path: /03-red-black-trees/03-rotations.md
+      -
+        Type: Lesson
+        UID: 38bc987d5c9a0864206ec0cd83a56709
+        Path: /03-red-black-trees/04-rebalance.md
+      -
+        Type: Lesson
+        UID: 6395e67ffd4b1a7cbde585b0e92fd8c3
+        Path: /03-red-black-trees/10-discussion-questions.md
+      -
+        Type: Lesson
+        UID: 2c1f30b5f41ce05d11baf3de433bef88
+        Path: /03-red-black-trees/11-lab.md
+      -
+        Type: Lesson
+        UID: 6a5937254adacebf664a498b28ab32bb
+        Path: /03-red-black-trees/12-whiteboard-questions.md
