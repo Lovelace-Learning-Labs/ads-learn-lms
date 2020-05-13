@@ -1,4 +1,4 @@
-# Red Black Trees
+# Rebalance
 
 ## Learning Objectives
 

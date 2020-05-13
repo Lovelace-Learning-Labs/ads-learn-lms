@@ -1,17 +1,17 @@
-# Title
+# Red-Black-Tree Rules
 
 ## Learning Objectives
 
-By the end of this lesson you will be able to:
+By the end of this module, students will be able to...
 
-* First Objective
-* [at least one]
-* [no more than four]
+* **Define** the terms red-black tree, black-depth and rebalance
+* **Explain** how, by following a set of rules, red-black trees can keep themselves balanced as they grow
+* **List** the red-black tree rules
 
 ## Lesson Content
 
-[Can be written content, videos, slides, images, gifs, etc. Think about including a rationale as the first few sentences/paragraph if you feel the lesson requires significant motivation or context. Examples of markdown formatting are at https://learn-2.galvanize.com/cohorts/667/blocks/13/content_files/walkthrough/03b-markdown-examples.md]
+# TODO Panopto Link
 
 ## Challenges
 
-[It's recommended that each lesson has at least one challenge. Challenges make the content interactive and give instructors visibility into student learning. These challenge can be spread out in between content, or can be at the end of the lesson. Examples of all challenge types are in this unit -- https://learn-2.galvanize.com/cohorts/667/blocks/13/content_files/Multiple-Choice-Challenge.md]
+
