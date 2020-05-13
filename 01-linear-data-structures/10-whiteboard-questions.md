@@ -15,7 +15,7 @@ For each question:
 
 ### Questions
 
-1. Find the `k`th node from the end of a singly-linked list
+1. Find the \\(kth\\) node from the end of a singly-linked list
 1. Rotate a linked list (forward / backward, singly- / doubly-linked)
 1. Detect a loop in a linked list
 1. Reverse a singly-linked list

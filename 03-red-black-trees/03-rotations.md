@@ -87,16 +87,16 @@ Consider the following red-black subtree, how does rotation affect black-depth? 
 
 ##### !question
 
-If `n` is the number of nodes in the subtree and `h` is the height of the subtree, what is the time complexity of rotation?
+If \\(n\\) is the number of nodes in the subtree and \\(h\\) is the height of the subtree, what is the time complexity of rotation?
 
 ##### !end-question
 
 ##### !options
 
 * Constant
-* `O(log(n))`
-* `O(h)`
-* `O(n)`
+* \\(O(log(n))\\)
+* \\(O(h)\\)
+* \\(O(n)\\)
 
 ##### !end-options
 

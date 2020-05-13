@@ -21,7 +21,7 @@ For each question we'll discuss in small groups, then as a big group
     - What are the space and time complexity of serialization?
     - What does _deserialization_ (turning a string back into a linked list) look like?
 1. Work with your group to design an array-based queue that doesn't leak memory. How does it work? What constraints does it have?
-1. The video mentions that array insert is amortized `O(1)`, even though allocating a new buffer and copying existing elements is `O(n)`. How does this work?
+1. The video mentions that array insert is amortized \\(O(1)\\), even though allocating a new buffer and copying existing elements is \\(O(n)\\). How does this work?
 
 ## Stacks
 

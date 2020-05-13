@@ -71,21 +71,21 @@ What is the point of Big-O notation?
 
 ##### !question
 
-Saying that an algorithm is `O(n)` is sufficient to analyze its growth
+Saying that an algorithm is \\(O(n)\\) is sufficient to analyze its growth
 
 ##### !end-question
 
 ##### !options
 
 * Yes
-* No, because we don't know what coefficient `n` might have
-* No, because we haven't said what `n` is
+* No, because we don't know what coefficient \\(n\\) might have
+* No, because we haven't said what \\(n\\) is
 
 ##### !end-options
 
 ##### !answer
 
-* No, because we haven't said what `n` is
+* No, because we haven't said what \\(n\\) is
 
 ##### !end-answer
 
@@ -116,18 +116,18 @@ Which of the following complexity orders grow **slower** than the input
 
 ##### !options
 
-* Constant - `O(1)`
-* Logarithmic - `O(log(n))`
-* Linear - `O(n)`
-* Log-linear - `O(n*log(n))`
-* Polynomial - `O(n^2)`, `O(n^3)`, etc
+* Constant - \\(O(1)\\)
+* Logarithmic - \\(O(log(n))\\)
+* Linear - \\(O(n)\\)
+* Log-linear - \\(O(n*log(n))\\)
+* Polynomial - \\(O(n^2)\\), \\(O(n^3)\\), etc
 
 ##### !end-options
 
 ##### !answer
 
-* Constant - `O(1)`
-* Logarithmic - `O(log(n))`
+* Constant - \\(O(1)\\)
+* Logarithmic - \\(O(log(n))\\)
 
 ##### !end-answer
 
@@ -158,17 +158,17 @@ Which of the following complexity orders grow **at the same rate** as the input
 
 ##### !options
 
-* Constant - `O(1)`
-* Logarithmic - `O(log(n))`
-* Linear - `O(n)`
-* Log-linear - `O(n*log(n))`
-* Polynomial - `O(n^2)`, `O(n^3)`, etc
+* Constant - \\(O(1)\\)
+* Logarithmic - \\(O(log(n))\\)
+* Linear - \\(O(n)\\)
+* Log-linear - \\(O(n*log(n))\\)
+* Polynomial - \\(O(n^2)\\), \\(O(n^3)\\), etc
 
 ##### !end-options
 
 ##### !answer
 
-* Linear - `O(n)`
+* Linear - \\(O(n)\\)
 
 ##### !end-answer
 
@@ -199,18 +199,18 @@ Which of the following complexity orders grow **at the same rate** as the input
 
 ##### !options
 
-* Constant - `O(1)`
-* Logarithmic - `O(log(n))`
-* Linear - `O(n)`
-* Log-linear - `O(n*log(n))`
-* Polynomial - `O(n^2)`, `O(n^3)`, etc
+* Constant - \\(O(1)\\)
+* Logarithmic - \\(O(log(n))\\)
+* Linear - \\(O(n)\\)
+* Log-linear - \\(O(n*log(n))\\)
+* Polynomial - \\(O(n^2)\\), \\(O(n^3)\\), etc
 
 ##### !end-options
 
 ##### !answer
 
-* Log-linear - `O(n*log(n))`
-* Polynomial - `O(n^2)`, `O(n^3)`, etc
+* Log-linear - \\(O(n*log(n))\\)
+* Polynomial - \\(O(n^2)\\), \\(O(n^3)\\), etc
 
 ##### !end-answer
 
@@ -274,7 +274,7 @@ Unless otherwise stated, which of the following do we typically analyze?
 
 ##### !question
 
-If `n` is the size of the input array, what is the time complexity of the following algorithm?
+If \\(n\\) is the size of the input array, what is the time complexity of the following algorithm?
 
 ```js
 // Stop words are common words that don't add semantic meaning to a text
@@ -303,16 +303,16 @@ const countStopWords = (words) => {
 
 ##### !options
 
-* `O(1)`
-* `O(log(n))`
-* `O(n)`
-* `O(n^2)`
+* \\(O(1)\\)
+* \\(O(log(n))\\)
+* \\(O(n)\\)
+* \\(O(n^2)\\)
 
 ##### !end-options
 
 ##### !answer
 
-* `O(n)`
+* \\(O(n)\\)
 
 ##### !end-answer
 

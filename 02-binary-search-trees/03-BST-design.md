@@ -6,7 +6,7 @@ By the end of this module, students will be able to...
 
 - **Define** the terms linear search, binary search, binary search tree, root, parent, child, ancestor, descendant, subtree
 - **Explain** why previously studied data structures aren't sufficient to implement a fast ordered dictionary
-- **Use** binary search to find an element in a sorted array in `\(O(log(n))\)` time
+- **Use** binary search to find an element in a sorted array in \\(\(O(log(n))\)\\) time
 - **Describe** the structure of a binary search tree
 
 ## Lesson Content
@@ -35,7 +35,7 @@ Which of these features did we steal from other data structures for our binary s
 
 ##### !options
 
-* Storing records in sorted order to allow `O(n)` iteration and `O(log(n))` lookup via binary search
+* Storing records in sorted order to allow \\(O(n)\\) iteration and \\(O(log(n))\\) lookup via binary search
 * Storing records in insertion order to quickly find the oldest or newest record
 * Using linked nodes to store records to enable quick random insert and delete
 * Using a hash function to get constant-time lookup and insert
@@ -45,7 +45,7 @@ Which of these features did we steal from other data structures for our binary s
 
 ##### !answer
 
-* Storing records in sorted order to allow `O(n)` iteration and `O(log(n))` lookup via binary search
+* Storing records in sorted order to allow \\(O(n)\\) iteration and \\(O(log(n))\\) lookup via binary search
 * Using linked nodes to store records to enable quick random insert and delete
 
 ##### !end-answer

@@ -11,7 +11,7 @@ For each question we'll discuss in small groups, then as a big group
 1. Introduce yourself to your group!
 1. What questions or comments do you have after watching the video lectures?
 1. How could you use a BST to sort a list of numbers? What are the time and space complexities of this operation?
-1. Do all binary trees of size `n` have the same number of leaves (empty children)? Make a convincing argument or find a counter-example.
+1. Do all binary trees of size \\(n\\) have the same number of leaves (empty children)? Make a convincing argument or find a counter-example.
 1. Show that if a node in a BST has two children, then its successor (the node with the next key, in order) has no left child and its predecessor has no right child
 1. How would we need to adjust our tree interface and implementation to permit _repeat keys_?
     - Does this change the time or space complexity of our operations?

@@ -27,7 +27,7 @@ https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b718a392-ab38
 
 ##### !question
 
-Where did the letters `c`, `d` and `e`, come from?
+Where did the letters \\(c\\), \\(d\\) and \\(e\\), come from?
 
 ##### !end-question
 
@@ -109,27 +109,27 @@ What does it mean for `dequeue` to be amortized constant time?
 
 In which of the following scenarios would dequeue not be amortized constant time?
 
-Remember that `e` is the number of elements that have ever been enqueued.
+Remember that \\(e\\) is the number of elements that have ever been enqueued.
 
 ##### !end-question
 
 ##### !options
 
-* 1 cancel and `e - 1` dequeues
+* 1 cancel and \\(e - 1\\) dequeues
 * 50% cancels and 50% dequeues
-* `e - 1` cancels and 1 dequeue
+* \\(e - 1\\) cancels and 1 dequeue
 
 ##### !end-options
 
 ##### !answer
 
-* `e - 1` cancels and 1 dequeue
+* \\(e - 1\\) cancels and 1 dequeue
 
 ##### !end-answer
 
 ##### !explanation
 
-The math to figure out that dequeue is amortized constant relies on `d` being linear in terms of `e`. In other words a constant portion of elements end up getting dequeued instead of canceled.
+The math to figure out that dequeue is amortized constant relies on \\(d\\) being linear in terms of \\(e\\). In other words a constant portion of elements end up getting dequeued instead of canceled.
 
 <br>
 
@@ -137,11 +137,11 @@ If that's true then we can "spread out" the cancels amongst the dequeues, and it
 
 <br>
 
-But if `d` is sub-linear (e.g. constant or logarithmic), then `c` (which must be linear, since it has to pick up all the leftover elements) grows faster, and the relationship breaks down. There's not enough dequeues to "soak up" all the cancels, and the more elements you add the worse the situation becomes.
+But if \\(d\\) is sub-linear (e.g. constant or logarithmic), then \\(c\\) (which must be linear, since it has to pick up all the leftover elements) grows faster, and the relationship breaks down. There's not enough dequeues to "soak up" all the cancels, and the more elements you add the worse the situation becomes.
 
 <br>
 
-The most extreme case of this is when `d` is a constant like 4. Then there's `e - d` cancels for each dequeue, which (since `d` is a constant) is `O(e)`.
+The most extreme case of this is when \\(d\\) is a constant like 4. Then there's \\(e - d\\) cancels for each dequeue, which (since \\(d\\) is a constant) is \\(O(e)\\).
 
 ##### !end-explanation
 
@@ -174,8 +174,8 @@ At the end of the video, why are we unhappy with the performance of the ArrayQue
 
 * Enqueue creates a new object on the heap but dequeue and cancel don't destroy it, creating a memory leak
 * Enqueue increases the size of the storage array but dequeue and cancel don't decrease it, creating a memory leak
-* Cancel is `O(n)` due to linear search for the element
-* Dequeue has worst-case `O(c)` time complexity
+* Cancel is \\(O(n)\\) due to linear search for the element
+* Dequeue has worst-case \\(O(c)\\) time complexity
 * We're perfectly happy with the performance, thank you
 
 ##### !end-options

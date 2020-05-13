@@ -97,15 +97,15 @@ Does adding a `rebalance` step to our `insert` change `insert`'s time complexity
 ##### !options
 
 * No, because `rebalance` is constant-time
-* No, because `rebalance` is `O(h)` time, same as `insert`
-* No, because `rebalance` is `O(n)` time, same as `insert`
+* No, because `rebalance` is \\(O(h)\\) time, same as `insert`
+* No, because `rebalance` is \\(O(n)\\) time, same as `insert`
 * Yes, it changes its complexity order
 
 ##### !end-options
 
 ##### !answer
 
-* No, because `rebalance` is `O(h)` time, same as `insert`
+* No, because `rebalance` is \\(O(h)\\) time, same as `insert`
 
 ##### !end-answer
 

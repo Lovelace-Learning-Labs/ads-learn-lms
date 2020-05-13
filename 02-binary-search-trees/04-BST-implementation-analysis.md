@@ -86,23 +86,23 @@ Select the best definition for **balanced**
 
 ##### !question
 
-If `n` is the number of records in the tree, which of the following statements are true?
+If \\(n\\) is the number of records in the tree, which of the following statements are true?
 
 ##### !end-question
 
 ##### !options
 
-* The height of a balanced tree is `O(log(n))`
-* The height of a balanced tree is `O(n)`
-* The height of an unbalanced tree is `O(log(n))`
-* The height of an unbalanced tree is `O(n)`
+* The height of a balanced tree is \\(O(log(n))\\)
+* The height of a balanced tree is \\(O(n)\\)
+* The height of an unbalanced tree is \\(O(log(n))\\)
+* The height of an unbalanced tree is \\(O(n)\\)
 
 ##### !end-options
 
 ##### !answer
 
-* The height of a balanced tree is `O(log(n))`
-* The height of an unbalanced tree is `O(n)`
+* The height of a balanced tree is \\(O(log(n))\\)
+* The height of an unbalanced tree is \\(O(n)\\)
 
 ##### !end-answer
 
@@ -167,32 +167,32 @@ Which of the following statements is true?
 
 ##### !question
 
-If `n` is the number of records and `h` is the height of the tree, which of the following statements are true?
+If \\(n\\) is the number of records and \\(h\\) is the height of the tree, which of the following statements are true?
 
 ##### !end-question
 
 ##### !options
 
-* Lookup, insert and delete takes `O(log(n))` time
-* Lookup, insert and delete takes `O(n)` time
-* Lookup, insert and delete takes `O(log(h))` time
-* Lookup, insert and delete takes `O(h)` time
-* Iterate takes `O(log(n))` time
-* Iterate takes `O(n)` time
-* Iterate takes `O(log(h))` time
-* Iterate takes `O(h)` time
-* Iterate takes `O(log(n))` space
-* Iterate takes `O(n)` space
-* Iterate takes `O(log(h))` space
-* Iterate takes `O(h)` space
+* Lookup, insert and delete takes \\(O(log(n))\\) time
+* Lookup, insert and delete takes \\(O(n)\\) time
+* Lookup, insert and delete takes \\(O(log(h))\\) time
+* Lookup, insert and delete takes \\(O(h)\\) time
+* Iterate takes \\(O(log(n))\\) time
+* Iterate takes \\(O(n)\\) time
+* Iterate takes \\(O(log(h))\\) time
+* Iterate takes \\(O(h)\\) time
+* Iterate takes \\(O(log(n))\\) space
+* Iterate takes \\(O(n)\\) space
+* Iterate takes \\(O(log(h))\\) space
+* Iterate takes \\(O(h)\\) space
 
 ##### !end-options
 
 ##### !answer
 
-* Lookup, insert and delete takes `O(h)` time
-* Iterate takes `O(n)` time
-* Iterate takes `O(h)` space
+* Lookup, insert and delete takes \\(O(h)\\) time
+* Iterate takes \\(O(n)\\) time
+* Iterate takes \\(O(h)\\) space
 
 ##### !end-answer
 
