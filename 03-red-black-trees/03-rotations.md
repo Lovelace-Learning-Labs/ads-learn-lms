@@ -224,22 +224,22 @@ What happened to node `D`?
 
 ##### !question
 
-What happened to the nodes to the right of `D`?
+What happened to the nodes in `D`'s left subtree (rooted at `B`)?
 
 ##### !end-question
 
 ##### !options
 
-* The depth of every node in `D`'s right subtree (rooted at `B`) decreased by 1
-* The depth of every node in `D`'s right subtree (rooted at `B`) stayed the same
-* The depth of every node in `D`'s right subtree (rooted at `B`) increased by 1
+* The depth of every node decreased by 1
+* The depth of every node stayed the same
+* The depth of every node increased by 1
 * None of the above
 
 ##### !end-options
 
 ##### !answer
 
-* The depth of every node in `D`'s right subtree (rooted at `B`) increased by 1
+* The depth of every node increased by 1
 
 ##### !end-answer
 
@@ -264,15 +264,15 @@ What happened to the nodes to the right of `D`?
 
 ##### !question
 
-What happened to the nodes to the left of `D`?
+What happened to the nodes in `D`'s right subtree (rooted at `F`)?
 
 ##### !end-question
 
 ##### !options
 
-* The depth of every node in `D`'s left subtree (rooted at `F`) decreased by 1
-* The depth of every node in `D`'s left subtree (rooted at `F`) stayed the same
-* The depth of every node in `D`'s left subtree (rooted at `F`) increased by 1
+* The depth of every node decreased by 1
+* The depth of every node stayed the same
+* The depth of every node increased by 1
 * None of the above
 
 ##### !end-options
@@ -280,6 +280,53 @@ What happened to the nodes to the left of `D`?
 ##### !answer
 
 * None of the above
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, users can see after a failed attempt) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: multiple-choice
+* id: ae21345e-79d1-46fe-a2fd-5036f6609c85
+* title: Rotation and black-depth
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+
+##### !question
+
+Recall that in a red-black tree, the black-depth of a node is the number of black nodes on the path between it and the root.
+
+Consider the following sequence of operations on the nodes in a red-black tree:
+
+![](images/rbt-black-uncle-left.png)
+
+How does this affect the depths of the nodes `a`, `b`, `c` and `U`?
+
+##### !end-question
+
+##### !options
+
+* Each node decreases its black-depth by 1
+* Each node keeps the same black-depth
+* Each node increases its black-depth by 1
+* The nodes are affected in different ways
+
+##### !end-options
+
+##### !answer
+
+* Each node keeps the same black-depth
 
 ##### !end-answer
 
