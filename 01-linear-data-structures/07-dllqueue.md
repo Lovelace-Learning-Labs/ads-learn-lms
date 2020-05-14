@@ -12,7 +12,7 @@ By the end of this module, students will be able to...
 
 ## Lesson Content
 
-https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c312232b-3058-426b-bff0-abb500ee930b
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=c312232b-3058-426b-bff0-abb500ee930b&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" width=720 height=405 style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ## Challenges
 

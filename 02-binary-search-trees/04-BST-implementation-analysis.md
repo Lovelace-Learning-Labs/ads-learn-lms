@@ -13,7 +13,7 @@ By the end of this module, students will be able to...
 
 Note: this lesson was recorded before we decided to split BSTs and Red-Black Trees into separate weeks. As a result, some of the references to later modules might not make sense.
 
-https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cc5c4864-27a8-464d-8e7f-abb7017d750a
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=cc5c4864-27a8-464d-8e7f-abb7017d750a&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" width=720 height=405 style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ### Recursion Review
 

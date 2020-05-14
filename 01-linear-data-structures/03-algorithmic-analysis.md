@@ -14,7 +14,7 @@ By the end of this module, students will be able to...
 
 This lesson is review! If you are confident you remember the basics of algorithmic analysis, feel free to skip to the comprehension questions.
 
-https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=91d8f64d-b37a-4b1f-b18a-abb3000f5703
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=91d8f64d-b37a-4b1f-b18a-abb3000f5703&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" width=720 height=405 style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ## Challenges
 
