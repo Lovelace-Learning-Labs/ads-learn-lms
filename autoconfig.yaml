@@ -51,16 +51,16 @@ Standards:
         Path: /01-linear-data-structures/07-dllqueue.md
       -
         Type: Lesson
-        UID: 25252cdcac048e696dc4b28621589d5a
-        Path: /01-linear-data-structures/08-discussion-questions.md
+        UID: 3d9b2d0f74d9ded7fe3919c82208003d
+        Path: /01-linear-data-structures/10-discussion-questions.md
       -
         Type: Lesson
-        UID: 2c1a2abd72529687a3d20c34052dd2db
-        Path: /01-linear-data-structures/09-lab.md
+        UID: 63bfde34dfd34fd085d7ca910229dce7
+        Path: /01-linear-data-structures/11-lab.md
       -
         Type: Lesson
-        UID: b412240dffe506244b33f46633318dbc
-        Path: /01-linear-data-structures/10-whiteboard-questions.md
+        UID: 086d62a031a8fc76953a66c515ebe56b
+        Path: /01-linear-data-structures/12-whiteboard-questions.md
   -
     Title: Binary Search Trees
     Description: Binary Search Trees
