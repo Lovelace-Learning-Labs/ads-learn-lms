@@ -11,6 +11,8 @@ By the end of this module, students will be able to...
 
 <iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0302a43d-3f71-4f65-a29a-abb7002e678c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" width=720 height=405 style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
+[You can find the ordered dictionary in this week's lab](https://github.com/Lovelace-Learning-Labs/ads-binary-search-trees/blob/master/src/interfaces/ordered_dictionary.js)
+
 ## Challenges
 
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
