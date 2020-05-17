@@ -37,8 +37,8 @@ Which of the following are things we should consider when talking about an inter
 * What types of records are being stored
 * How records will be organized in memory
 * How client code will interact with the data structure
-* Whether interactions are queries or commands
-* How specific interactions will be implemented
+* Whether operations are queries or commands
+* How specific operations will be implemented
 * What patterns might appear in client workflows
 * Any specific performance requirements
 
@@ -48,11 +48,31 @@ Which of the following are things we should consider when talking about an inter
 
 * What types of records are being stored
 * How client code will interact with the data structure
-* Whether interactions are queries or commands
+* Whether operations are queries or commands
 * What patterns might appear in client workflows
 * Any specific performance requirements
 
 ##### !end-answer
+
+##### !hint
+
+Remember, an interface describes what a data structure looks like from the outside.
+
+* What is being stored?
+* What operations can you do on stored data?
+* What use patterns are best supported?
+
+In addition, an interface might make guarantees about specific operations:
+
+* This operation won't change stored data
+* This operation will take at most this much time
+
+An interface does **not** describe how things work "under the hood":
+
+* The way records are stored in memory
+* How an operation might be implemented
+
+##### !end-hint
 
 <!-- other optional sections -->
 <!-- !hint - !end-hint (markdown, users can see after a failed attempt) -->

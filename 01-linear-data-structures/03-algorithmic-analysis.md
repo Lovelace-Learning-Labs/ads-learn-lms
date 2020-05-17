@@ -110,7 +110,7 @@ Saying that an algorithm is \\(O(n)\\) is sufficient to analyze its growth
 
 ##### !question
 
-Which of the following complexity orders grow **slower** than the input
+Which of the following complexity orders grow **slower** than the input?
 
 ##### !end-question
 
@@ -152,7 +152,7 @@ Which of the following complexity orders grow **slower** than the input
 
 ##### !question
 
-Which of the following complexity orders grow **at the same rate** as the input
+Which of the following complexity orders grow **at the same rate** as the input?
 
 ##### !end-question
 
@@ -193,7 +193,7 @@ Which of the following complexity orders grow **at the same rate** as the input
 
 ##### !question
 
-Which of the following complexity orders grow **at the same rate** as the input
+Which of the following complexity orders grow **faster** than the input?
 
 ##### !end-question
 

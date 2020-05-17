@@ -68,6 +68,8 @@ What type of records does the ordered dictionary interface store?
 
 Which of the following performance requirements were established in the lesson for the ordered dictionary interface?
 
+Time and space are both in terms of the number of records currently stored.
+
 ##### !end-question
 
 ##### !options

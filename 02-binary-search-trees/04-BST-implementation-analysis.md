@@ -159,15 +159,15 @@ Which of the following statements is true?
 
 ### !challenge
 
-* type: checkbox
+* type: multiple-choice
 * id: 0ad5085a-0a37-43b0-8124-36112fb05a21
-* title: BST complexity
+* title: BST lookup time-complexity
 <!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
 <!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
 
 ##### !question
 
-If \\(n\\) is the number of records and \\(h\\) is the height of the tree, which of the following statements are true?
+If \\(n\\) is the number of records and \\(h\\) is the height of the tree, which of the following statements is true?
 
 ##### !end-question
 
@@ -177,10 +177,82 @@ If \\(n\\) is the number of records and \\(h\\) is the height of the tree, which
 * Lookup, insert and delete takes \\(O(n)\\) time
 * Lookup, insert and delete takes \\(O(log(h))\\) time
 * Lookup, insert and delete takes \\(O(h)\\) time
+
+##### !end-options
+
+##### !answer
+
+* Lookup, insert and delete takes \\(O(h)\\) time
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, users can see after a failed attempt) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: multiple-choice
+* id: 587e4c05-6bad-41cb-aea7-6ffd8fb79e43
+* title: BST iterate time-complexity
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+
+##### !question
+
+If \\(n\\) is the number of records and \\(h\\) is the height of the tree, which of the following statements is true?
+
+##### !end-question
+
+##### !options
+
 * Iterate takes \\(O(log(n))\\) time
 * Iterate takes \\(O(n)\\) time
 * Iterate takes \\(O(log(h))\\) time
 * Iterate takes \\(O(h)\\) time
+
+##### !end-options
+
+##### !answer
+
+* Iterate takes \\(O(n)\\) time
+
+##### !end-answer
+
+<!-- other optional sections -->
+<!-- !hint - !end-hint (markdown, users can see after a failed attempt) -->
+<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
+<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: multiple-choice
+* id: ca83ea78-d877-43fa-be72-71432f52fe8f
+* title: BST iterate space-complexity
+<!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
+<!-- * topics: [python, pandas] (optional the topics for analyzing points) -->
+
+##### !question
+
+If \\(n\\) is the number of records and \\(h\\) is the height of the tree, which of the following statements is true?
+
+##### !end-question
+
+##### !options
+
 * Iterate takes \\(O(log(n))\\) space
 * Iterate takes \\(O(n)\\) space
 * Iterate takes \\(O(log(h))\\) space
@@ -190,8 +262,6 @@ If \\(n\\) is the number of records and \\(h\\) is the height of the tree, which
 
 ##### !answer
 
-* Lookup, insert and delete takes \\(O(h)\\) time
-* Iterate takes \\(O(n)\\) time
 * Iterate takes \\(O(h)\\) space
 
 ##### !end-answer

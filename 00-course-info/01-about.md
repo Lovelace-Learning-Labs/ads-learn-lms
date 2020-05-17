@@ -60,7 +60,6 @@ As a student in this course, what am I expected to do before class each week?
 
 * Watch all video lessons for the week and answer comprehension questions in Learn
 * Read through the week's discussion questions
-* Spend about an hour thinking about the week's discussion questions
 * Finish the previous week's lab assignment
 * Finish the current week's lab assignment
 * Work through the previous week's whiteboard problems
@@ -79,6 +78,16 @@ As a student in this course, what am I expected to do before class each week?
 * Be on the Zoom call 5 minutes before class starts
 
 ##### !end-answer
+
+##### !hint
+
+* You should come to class having worked through the content and ready to fully participate in discussion questions
+* We'll have time in class to work on this week's lab
+* Whiteboard problems are always optional
+* If you're stuck on something, ask for help
+* Give yourself a few minutes before class starts to sort out any technical issues
+
+##### !end-hint
 
 <!-- other optional sections -->
 <!-- !hint - !end-hint (markdown, users can see after a failed attempt) -->

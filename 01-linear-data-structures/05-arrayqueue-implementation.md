@@ -21,7 +21,7 @@ Some of these questions ask about the implementation of ArrayQueue. You can find
 
 ### !challenge
 
-* type: checkbox
+* type: multiple-choice
 * id: 260f9850-babf-4543-a15b-655e24282dff
 * title: JavaScript Arrays
 <!-- * points: [1] (optional, the number of points for scoring as a checkpoint) -->
@@ -29,7 +29,7 @@ Some of these questions ask about the implementation of ArrayQueue. You can find
 
 ##### !question
 
-Which of the following are true of JavaScript arrays
+Which of the following is **not** guaranteed to be true of JavaScript arrays?
 
 ##### !end-question
 
@@ -44,9 +44,7 @@ Which of the following are true of JavaScript arrays
 
 ##### !answer
 
-* They resize themselves automatically
-* Append is amortized constant time
-* They can contain multiple types
+* They are always backed by contiguous memory
 
 ##### !end-answer
 
