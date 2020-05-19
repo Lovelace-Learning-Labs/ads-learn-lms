@@ -15,4 +15,5 @@ For each question:
 
 ### Questions
 
+1. Write algorithms to transform a heap into a binary tree and vice versa. Can you do it in \\(O(n)\\) time?
 

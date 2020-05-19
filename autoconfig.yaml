@@ -123,3 +123,34 @@ Standards:
         Type: Lesson
         UID: 6a5937254adacebf664a498b28ab32bb
         Path: /03-red-black-trees/12-whiteboard-questions.md
+  -
+    Title: Heaps
+    Description: Heaps
+    UID: 5aaf91ff18c3178db5f0ff7d4f0afe82
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: ba728ae8da34c659076d5ab1ea672fa3
+        Path: /04-heaps/01-intro.md
+      -
+        Type: Lesson
+        UID: 393b37e82e4e2e5cc1c288e008ff29fd
+        Path: /04-heaps/02-priority-queue.md
+      -
+        Type: Lesson
+        UID: b2478c0e8364ed382e95ee9e841a29f5
+        Path: /04-heaps/03-stack-heap.md
+      -
+        Type: Lesson
+        UID: e8021c747cd15a6364d63dbec55b2b9a
+        Path: /04-heaps/10-discussion-questions.md
+      -
+        Type: Lesson
+        UID: 6c3f9259ed42e885ca5879fe77e4d85e
+        Path: /04-heaps/11-lab.md
+      -
+        Type: Lesson
+        UID: 9d1d44d8f1146defb7fec42d4344a616
+        Path: /04-heaps/12-whiteboard-questions.md
