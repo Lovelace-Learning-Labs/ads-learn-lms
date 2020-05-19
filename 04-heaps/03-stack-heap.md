@@ -105,7 +105,7 @@ int sum() {
 
 ![](images/stack-frame-struct.png)
 
-You can put arrays on the stack too, as long as they have a fixed size. The compiler allocates enough space for that many of the variable, one after the other.
+You can put arrays on the stack too, as long as they have a fixed size. The compiler sets aside enough space for that many of the variable, one after the other.
 
 ```c
 struct Point { /* ... */ };
@@ -117,7 +117,7 @@ int main() {
 
 ![](images/stack-frame-array.png)
 
-The compiler also stores some extra info for each function, like parameter values and where the function should return to when its done. The space needed to store all the variables and extra info for a function is called a _stack frame_.
+The compiler also stores some extra info for each function, like argument values and where the function should return to when it's done. The space needed to store all the variables and extra info for a function is called a _stack frame_.
 
 #### Stack Frames
 
@@ -198,46 +198,86 @@ void main() {
 
 ![](images/stack-frame-multiple-complex.png)
 
+A potentially confusing feature of this program is that our references (always 8 bytes) are the same size as our `Point` struct (two 4-byte integers). If we were to increase the size of a `Point` (for example by adding a `z` coordinate) the storage required in the blue `main` stack frame would increase, but the size of the references in the other functions would not.
+
 #### Stack Pros and Cons
 
-The stack is great because it's simple. Each function keeps track of exactly the memory it needs, and when it's done that memory is returned to the pool. There's no way to leak memory!
+The stack is great because its rules are well defined and use patterns are relatively simple. Each function keeps track of exactly the memory it needs, and when it's done that memory is returned to the pool. There's no way to leak memory!
 
 This simplicity also makes for easy optimizations like [memory caching](https://searchstorage.techtarget.com/definition/cache-memory) and [prefetching](https://en.wikipedia.org/wiki/Cache_prefetching).
 
 The downside of the stack is that objects can't outlive the function that creates them. This is fine for simple programs, but most real-world programs usually need some sort of dynamic, long-lived memory.
 
-In addition, most compilers put a strict limit on the maximum size of a program's call stack, [typically around 1MB](https://stackoverflow.com/questions/1825964/c-c-maximum-stack-size-of-program) for modern systems. Exceeding this limit results in a "stack overflow" error.
+In addition, most compilers put a strict limit on the maximum size of a program's call stack, [typically around 1MB](https://stackoverflow.com/questions/1825964/c-c-maximum-stack-size-of-program) for modern systems. Exceeding this limit (through infinite recursion or by allocating something really big on the stack) results in a "stack overflow" error.
 
 ### The Heap
 
+When a program needs to create objects that are long-lived or that take more than a small amount of memory, it can put them in a different region of memory called the heap. Objects on the heap are accessed through references, stored either on the stack or in another heap object.
 
+```c
+void main() {
+  Point* point = new Point(x: 3, y: 9);
+}
+```
+
+![](images/stack-frame-heap-basic.png)
+
+_Note that the numbers for where the stack and heap start and end are made up - a real process would have very different numbers_
+
+The process of "grabbing memory" from the heap to use for an object is called _allocation_.
+
+How do you know something's being allocated on the heap? Any time you see the keyword `new`. Remember that in most languages, syntactic sugar for hash / array creation is a wrapper for something like `new Hash` or `new Array`.
 
 #### Heap Pros and Cons
 
-Pros:
+##### Size and Speed
 
-- "Unlimited" size (all of main memory + swap file)
-- Data can be as long-lived as the program
+The heap is typically several orders of magnitude larger than the stack, maxing out at tens or hundreds of GB instead of a single MB. This is due to convenience, not any fundamental principle of computer science. Lots of time and research have shown that having a small stack and a large heap is the most useful thing for most programs.
 
-Cons:
+Access to the heap always goes through at least one extra layer of indirection (you have to resolve a reference on the stack first), so even in the best case the heap is slightly slower than the stack. Furthermore, because the heap is big and access is essentially random, it benefits somewhat less from caching and prefetching than the stack does. The difference usually isn't large, but it is there.
 
-- Memory cleanup is more complex, need either manual free, garbage collection, or something like Rust's ownership model
-- May be significantly slower than something allocated on the stack
+##### Flexibility
+
+While the stack has lots of rules governing how it works, the heap is relatively unstructured. Your program asks for a certain amount of memory, and the compiler blocks it off and hands you back a reference. Your program is then free to do whatever it likes with it.
+
+The downside of this flexibility is that cleaning up memory becomes more complicated. Since we've decoupled our objects from the functions that created them, there's no obvious way to tell when that memory can be safely recycled.
+
+There are a few strategies for dealing with this:
+
+Make programmers **manually free memory**
+
+- Simple for the compiler
+- Result in a memory leak or corruption via use-after-free when someone makes a mistake
+- Found in old-school languages like C and C++
+
+Use a **garbage collector** to periodically find and reclaim unused memory
+
+- Simple for the programmer
+- Garbage collectors are complex, slow and hard to predict
+- Still possible to "trick" the GC into leaking memory (e.g. via circular references)
+- Found in most modern languages (Java, Python, Ruby, Go, JavaScript, etc.)
+
+Use an **object ownership model** (like in Rust)
+
+- Complex for programmer and compiler
+- Errors arise at compile time, so memory leaks and use-after-frees are impossible
+- No garbage collection required
+- As of 2020, Rust is super cool but still somewhat new / experimental
 
 ### Review: Stack vs Heap
 
-| Property        | Stack                               | Heap                                      |
-| --------------- | ----------------------------------- | ----------------------------------------- |
-| Max size        | ~1MB                                | "Unlimited"                               |
-| Speed           | Fast                                | Maybe slower, especially for big programs |
-| Object lifetime | Goes away when the function returns | Until freed / dereferenced                |
-| Memory cleanup  | Simple: pop a stack frame           | Complex: manual free / GC                 |
+| Property        | Stack                               | Heap                                               |
+| --------------- | ----------------------------------- | -------------------------------------------------- |
+| Max size        | ~1MB                                | "Unlimited"                                        |
+| Speed           | Fast                                | Maybe slower, especially for big programs          |
+| Object lifetime | Goes away when the function returns | Until freed / dereferenced                         |
+| Memory cleanup  | Simple: pop a stack frame           | Complex: manual free / GC / something experimental |
 
 ### Memory Layout in JavaScript
 
 The ECMA spec doesn't say _anything_ about how memory should be laid out. This is great because it gives JS engines tons of leeway to optimize code, and JavaScript is surprisingly fast as a result. But it does make our analysis more complex (and engine-dependent).
 
-What follows is targeted specifically at V8. Between Chrome, Edge (r.i.p. Chakra), Node and Electron V8 has far-and-away the biggest market share, and it's therefore easier to find documentation about. As far as this author can tell, SpiderMonkey (Firefox) follows basically the same pattern.
+What follows is targeted specifically at V8. Between Chrome, Edge (r.i.p. Chakra), Node and Electron, V8 has far-and-away the biggest market share, and it's therefore easier to find documentation about. As far as this author can tell, SpiderMonkey (Firefox) follows basically the same pattern.
 
 In practice, the fundamentals of memory management in JavaScript are similar to more traditional languages:
 
@@ -246,56 +286,45 @@ In practice, the fundamentals of memory management in JavaScript are similar to 
 
 The key difference is that unlike with traditional languages, the programmer has no control over where an object is allocated. You can't elect to put a small array or object on the stack - the interpreter chooses for you, and generally it will choose the heap.
 
-That means that the following C code + memory layout
+If we were to translate our NQC point distance program from before into JavaScript, we might end up with something like the following:
 
-```c
-struct HeapRecord {
-  int priority;
+```js
+const manhattanDistance = (start, finish) => {
+  return = Math.abs(start.x - finish.x) + Math.abs(start.y - finish.y);
+}
 
-  // In C, adding * to a type gives you a reference
-  // In other words, element is stored somewhere else, probably on the heap
-  // void* is a generic reference, meaning we don't know the type of element
-  void* element;
-};
+const euclidianDistance = (start, finish) => {
+  const deltaX = start.x - finish.x;
+  const deltaY = start.y - finish.y;
+  return = Math.sqrt(deltaX * deltaX + deltaY * deltaY)
+}
 
-struct HeapDS {
-  int count;
+const distanceDifference = (start, finish) => {
+  const manhattan = manhattanDistance(start, finish);
+  const euclidian = euclidianDistance(start, finish);
+  return manhattan - euclidian;
+}
 
-  // The heap's storage is not a reference (no * in the type),
-  // which means it's an inline array
-  struct HeapRecord[1024] storage;
-};
+const main = () => {
+  const a = { x: 4, y: 10 };
+  const b = { x: 5, y: 7 };
 
-int main (char** args) {
-  // Allocate a heap as a local variable (on the stack)
-  struct HeapDS priorityQueue;
-  priorityQueue.count = 0;
-
-  // ... use the heap ...
+  // JS always passes objects by reference, so there's no
+  // need for us to specify with an &
+  const diff = distanceDifference(a, b);
 }
 ```
 
-Translated into JavaScript would have a very different memory layout
-
-```js
-const main = () => {
-  // Objects are always allocated on the heap
-  const priorityQueue = {
-    count: 0,
-    storage: [],
-  };
-  for (let i = 0; i < 1024; i += 1) {
-    priorityQueue.storage.push({ priority: undefined, element: undefined });
-  }
-};
-```
+![](images/js-stack-heap.png)
 
 #### Complications
 
-JavaScript has two features that complicate this.
+JavaScript has two features that complicate our model.
 
 First, JS is dynamically typed
 
+- The fields of an object aren't fixed like a struct
+- Fields can be accessed via a string name, so the JS compiler needs to keep a lookup table
 - Variables can change type mid-function
 - We don't know how much space something will take up until runtime
 
@@ -319,6 +348,8 @@ Address
 Pointer or reference
 Stack
 Stack frame
+Heap
+Allocate
 
 ### Additional Reading
 
