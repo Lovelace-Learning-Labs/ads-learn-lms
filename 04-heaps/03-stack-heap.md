@@ -1,4 +1,6 @@
-# Memory Layout
+# Supplement: Memory Layout
+
+This section is optional. You don't strictly need it for our discussion of data structures, but it helps give context to some of what we're doing. Plus, it's interesting!
 
 ## Learning Objectives
 
