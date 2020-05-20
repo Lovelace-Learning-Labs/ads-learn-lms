@@ -2,15 +2,16 @@
 
 ## Learning Objectives
 
-By the end of this lesson you will be able to:
+By the end of this lesson, students will be able to...
 
-* First Objective
-* [at least one]
-* [no more than four]
+* **Define** the following terms: bit, byte, word, address, pointer, reference, call stack, stack frame, program heap, allocate
+* **Describe** how addresses and references allow a program to link regions of memory together
+* **Differentiate** between the call stack and the program heap
+* **Explain** what all this has to do with the heap data structure
 
 ## Lesson Content
 
-We've talked a lot about the stack and the heap already this week. Let's dive into
+We've talked a lot about the stack and the heap already this week. Let's dive into these concepts a little more.
 
 In general the question we're trying to answer in this section is:
 
@@ -420,25 +421,9 @@ The downside of this flexibility is that cleaning up memory becomes more complic
 
 There are a few strategies for dealing with this:
 
-Make programmers **manually free memory**
-
-* Simple for the compiler
-* Result in a memory leak or corruption via use-after-free when someone makes a mistake
-* Found in "old-school" languages like C and C++
-
-Use a **garbage collector** to periodically find and reclaim unused memory
-
-* Simple for the programmer
-* Garbage collectors are complex, slow and hard to predict
-* Still possible to "trick" the GC into leaking memory (e.g. via circular references)
-* Found in most modern languages (Java, Python, Ruby, Go, JavaScript, etc.)
-
-Use an **object ownership model** (like in Rust)
-
-* Complex for programmer and compiler
-* Errors arise at compile time, so memory leaks and use-after-frees are impossible
-* No garbage collection required
-* As of 2020, Rust is super cool but still somewhat new / experimental
+* Make programmers **manually free memory** (C, C++, etc.)
+* Use a **garbage collector** to periodically find and reclaim unused memory (Java, Python, Ruby, Go, JavaScript, etc.)
+* Use an **object ownership model** (Rust)
 
 No matter which scheme your language uses, reclaiming heap memory is more complicated than reclaiming stack memory.
 
@@ -489,8 +474,6 @@ What are the main advantages of allocating objects on the heap instead of the st
 
 The ECMA spec doesn't say _anything_ about how memory should be laid out. This is great because it gives JS engines tons of leeway to optimize code, and JavaScript is surprisingly fast as a result. But it does make our analysis more complex (and engine-dependent).
 
-What follows is targeted specifically at V8. Between Chrome, Edge (r.i.p. Chakra), Node and Electron, V8 has far-and-away the biggest market share, and it's therefore easier to find documentation about. As far as this author can tell, SpiderMonkey (Firefox) follows basically the same pattern.
-
 In practice, the fundamentals of memory management in JavaScript are similar to more traditional languages:
 
 * When you call a function a frame is added to the stack with enough room for all the function's local variables (primitives or references)
@@ -529,6 +512,8 @@ const main = () => {
 
 ![](images/js-stack-heap.png)
 
+Dynamic typing and the JIT compiler make the reality of memory layout in JS a little more complex. However, the intuition that "objects and arrays live on the heap" is generally sound.
+
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 <!-- Replace everything in square brackets [] and remove brackets  -->
 
@@ -561,28 +546,6 @@ When you create an object or array in JavaScript, where is it allocated?
 
 <!-- ======================= END CHALLENGE ======================= -->
 
-#### Complications
-
-JavaScript has two features that complicate our model.
-
-First, JS is dynamically typed
-
-* The fields of an object aren't fixed like a struct
-* Fields can be accessed via a string name, so the JS compiler needs to keep a lookup table
-* Variables can change type mid-function
-* We don't know how much space something will take up until runtime
-
-Second, JS has 2 compilers, the interpreter and the optimizing compiler
-
-| Compiler            | Goal             | Pattern                                                                                                              |
-| ------------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Interpreter         | Fast compilation | Stack/heap as above                                                                                                  |
-| Optimizing compiler | Fast execution   | Aggressive changes, including but not limited to locking down types, inlining functions and moving data to the stack |
-
-Neither of these will affect the basics of our analysis. The optimizing compiler in particular sounds scary, but since it generally makes things better and not worse, we can mostly ignore it.
-
-Still, if you're staring at the profiler trying to figure out what's going on, these are good to know about, at least so you have a place to start in doing more research.
-
 ### Takeaway: Heaps on the Stack
 
 So what does all this have to do with our discussion of heap data structures?
@@ -591,7 +554,7 @@ Because our heap data structure has a small fixed size, we could plausibly alloc
 
 Here's what the memory layout of our heap data structure might look like in JavaScript:
 
-![](images/java-script-heap-ds.png)
+![](images/js-heap-ds.png)
 
 There's a lot of references there, which means that accessing records takes a lot of steps.
 
@@ -622,7 +585,7 @@ Putting everything in one contiguous block like that means there's a lot less re
 
 Allocating our NQC heap DS on the program heap (via `new`) would have a similar result, with just one extra reference to resolve per lookup.
 
-The key observation is that this performance win only works because a heap data structure is a big block of contiguous memory. With a linked tree like a red-black tree this doesn't work - each node is a separate object, and we have no knowledge of how they'll be laid out in memory.
+The key observation is that **this performance win only works because a heap data structure is a big block of contiguous memory**. With a linked tree like a red-black tree this doesn't work - each node is a separate object, and we have no knowledge of how they'll be laid out in memory.
 
 ### Vocab
 
@@ -633,13 +596,13 @@ The key observation is that this performance win only works because a heap data 
 | Word                 | 2, 4 or 8 bytes used to store a more complex value                                 |
 | Address              | Integer representing the location of a byte in memory, like an index into an array |
 | Pointer or reference | An address stored in memory, so that it "points to" another place in memory        |
-| Stack                | Highly-structured region of memory used to hold local variables                    |
+| Call Stack                | Highly-structured region of memory used to hold local variables                    |
 | Stack frame          | The space on the stack used by one function                                        |
-| Heap                 | Unstructured region of memory used to hold objects                                 |
+| Program Heap                 | Unstructured region of memory used to hold objects                                 |
 | Allocate             | Create an object on the heap                                                       |
 
 ### Additional Reading
 
-* [A crash course in just-in-time (JIT) compilers](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/) by Lin Clark of Mozilla - if you read nothing else, read this
+* [A crash course in just-in-time (JIT) compilers](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/) by Lin Clark of Mozilla - if you have time to read only one thing, read this
 * [Does JavaScript use stack or heap for memory allocation or both?](https://hashnode.com/post/does-javascript-use-stack-or-heap-for-memory-allocation-or-both-cj5jl90xl01nh1twuv8ug0bjk)
 * [References and Values](https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/02-intermediate-ruby/references-and-values.md) from the Ada classroom curriculum
