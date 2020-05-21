@@ -140,8 +140,12 @@ Standards:
         Path: /04-heaps/02-priority-queue.md
       -
         Type: Lesson
-        UID: b2478c0e8364ed382e95ee9e841a29f5
-        Path: /04-heaps/03-stack-heap.md
+        UID: 8b0bc7d807619840a48186dffb23b372
+        Path: /04-heaps/03-heap-design.md
+      -
+        Type: Lesson
+        UID: af5460593b2e2af9320e81424ec1f2c5
+        Path: /04-heaps/09-stack-heap.md
       -
         Type: Lesson
         UID: e8021c747cd15a6364d63dbec55b2b9a
