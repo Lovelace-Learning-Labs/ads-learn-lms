@@ -17,9 +17,12 @@ For each question we'll discuss in small groups, then as a big group
     - How would you check if two queues are equivalent?
     - Is it possible for two queues of the same class with a different internal structure to be equivalent?
         - They're the same class - same code in the functions, both either using or not using a sentinel, etc
-        - Another way to think about this question is, can you draw more than one linked list holding the same records in the same order?
+        - Another way to think about this question is, can you draw two different linked lists holding the same records in the same order?
+        - If you're interested in proving this formally, [proof by contradiction](https://nrich.maths.org/4717) is a likely technique to try
 1. How would you _serialize_ a linked list - that is, turn it into a string of characters that could be saved to a file or sent over the network? 
-    - What does the answer to the previous question tell us about what we need to store?
+    - What information will we need to store?
+        - Think about _structure_ and _data_
+        - What does the answer to the previous question tell us about this?
     - What assumptions do you need to make?
     - What are the space and time complexity of serialization?
     - What does _deserialization_ (turning a string back into a linked list) look like?
