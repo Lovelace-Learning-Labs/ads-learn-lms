@@ -10,9 +10,9 @@ By the end of this module, students will be able to...
 
 ## Lesson Content
 
-# TODO Panopto
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8d3fb6d3-b184-45d5-bb85-abc400f84613&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" width=720 height=405 style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-## Summary
+### Summary
 
 A **priority queue** associates a priority with each stored record
 
