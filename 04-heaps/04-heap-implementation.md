@@ -1,4 +1,4 @@
-# Heap Design
+# Heap Implementation
 
 ## Learning Goals
 

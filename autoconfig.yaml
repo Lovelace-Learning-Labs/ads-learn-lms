@@ -144,6 +144,14 @@ Standards:
         Path: /04-heaps/03-heap-design.md
       -
         Type: Lesson
+        UID: b9ce78fc6fe87f062684a271e4d043e8
+        Path: /04-heaps/04-heap-implementation.md
+      -
+        Type: Lesson
+        UID: 5f23b2e5691ec3c0177054864344d3df
+        Path: /04-heaps/05-heapsort.md
+      -
+        Type: Lesson
         UID: af5460593b2e2af9320e81424ec1f2c5
         Path: /04-heaps/09-stack-heap.md
       -

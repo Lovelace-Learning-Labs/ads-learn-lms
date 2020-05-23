@@ -1,16 +1,16 @@
 # Priority Queue Interface
 
-## Learning Objectives
+## Learning Goals
 
-By the end of this lesson you will be able to:
+By the end of this module, students will be able to...
 
-* First Objective
-* [at least one]
-* [no more than four]
+- **Describe** the operations of the priority queue interface
+- **List** the additional constraints we've added for this week
+- **Differentiate** between queues and priority queues
 
 ## Lesson Content
 
-[Can be written content, videos, slides, images, gifs, etc. Think about including a rationale as the first few sentences/paragraph if you feel the lesson requires significant motivation or context. Examples of markdown formatting are at https://learn-2.galvanize.com/cohorts/667/blocks/13/content_files/walkthrough/03b-markdown-examples.md]
+# TODO Panopto
 
 ## Challenges
 
