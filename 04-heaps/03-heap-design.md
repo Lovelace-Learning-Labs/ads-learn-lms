@@ -12,6 +12,19 @@ By the end of this module, students will be able to...
 
 # TODO Panopto
 
+### Summary
+
+Store tree nodes as elements in an **array**
+
+* Parent is at \\(\left \lfloor{ \frac{i}{2} } \right \rfloor \\)
+* Children are at \\(2 * i\\) and \\(2 * i + 1\\)
+
+Keep the tree **perfectly balanced**, bottom layer fills left-to-right.
+
+Maintain the **max-heap property**:
+
+>Every node has priority less than or equal to that of its parent
+
 ## Challenges
 
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->

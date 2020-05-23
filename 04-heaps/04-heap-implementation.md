@@ -8,9 +8,18 @@ By the end of this module, students will be able to...
 
 # TODO Panopto link
 
-Here is the pseudocode for sink and float:
+### Summary
 
-### Float
+To stay balanced, a heap must always **add and remove slots at the end** of the current storage, even if the record to add or remove doesn't go at the end.
+
+We described **float** and **sink** subroutines to help us:
+
+* **Insert:** add the record at the end, then "float" it up to the right spot by repeatedly swapping with its parent
+* **Remove-Max:** swap root with the last element, then "sink" the new root down to the right spot by repeatedly swapping with its largest child
+
+Pseudocode for sink and float:
+
+#### Float
 
 ```ruby
 def float(i)
@@ -23,7 +32,7 @@ def float(i)
     p = parent(i)
 ```
 
-### Sink
+#### Sink
 
 ```ruby
 def sink(i)
