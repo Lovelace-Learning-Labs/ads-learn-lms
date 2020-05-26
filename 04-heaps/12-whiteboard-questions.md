@@ -20,4 +20,5 @@ For each question:
 1. Write an algorithm to convert a max heap to a min heap in linear time.
 1. Write algorithms to serialize and deserialize a heap. What (if any) information do you need to store about the structure of the heap?
 1. Read about and implement [huffman coding](https://www.techiedelight.com/huffman-coding/). This is extra tricky in JS because it lacks a way to directly encode binary data, but it is possible! Do some research!
+1. Implement the b-heap data structure as described in the discussion questions.
 

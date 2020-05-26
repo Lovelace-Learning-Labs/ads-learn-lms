@@ -17,6 +17,10 @@ For each question we'll discuss in small groups, then as a big group
     - Minimum number of nodes
     - Minimum number of leaf nodes
     - How are these numbers related to each other?
+1. The video lesson describes the layout of a 1-indexed heap, with a null value at array index 0. This question asks you to consider a 0-indexed heap.
+    - What equations could you use to find the parent and left/right child indices for a heap node at index \\(i\\)?
+    - What advantage might there be to using a 1-indexed heap?
+1. The interface for `heapsort` makes a lot of assumptions about the user's data. What are some of these assumptions, and how would you need to adjust your code to relax them?
 1. In class we discussed max-heaps. Min-heaps also exist, they're the same except for the record with minimum priority is what gets removed. How would you need to change your heap implementation to get a min-heap?
 1. Could you implement the sort part of the heapsort algorithm faster than \\(O(n*log(n))\\) if you had a second array to copy values into? Why or why not?
 1. How would you delete an arbitrary node from a heap?
