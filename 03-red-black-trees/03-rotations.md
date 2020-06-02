@@ -166,7 +166,7 @@ Which of the following sequences of rotations would transform the top tree to th
 
 ### Rotation Depths
 
-For the next questions, consider the following right-rotation of node `D`:
+For the next questions, consider the following left-rotation of node `D`:
 
 ![](images/rotation-depths.png)
 
