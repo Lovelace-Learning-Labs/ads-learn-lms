@@ -166,3 +166,38 @@ Standards:
         Type: Lesson
         UID: 9d1d44d8f1146defb7fec42d4344a616
         Path: /04-heaps/12-whiteboard-questions.md
+  -
+    Title: Tries
+    Description: Tries
+    UID: 1ad54d0cf8875c2d8fb1a38ee488f334
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: 5205de78a469c892afddbd2d015b4f88
+        Path: /05-tries/01-intro.md
+      -
+        Type: Lesson
+        UID: 305d650f25add2e63cad17d7a0998181
+        Path: /05-tries/02-prefix-dictionary-interface.md
+      -
+        Type: Lesson
+        UID: 51bda6c50c1eb2ad51c7c0958a397cf0
+        Path: /05-tries/03-trie-implementation.md
+      -
+        Type: Lesson
+        UID: 7ddfd8b1a6f3d01781d84ec89b24088a
+        Path: /05-tries/04-trie-analysis.md
+      -
+        Type: Lesson
+        UID: e1e7c9868329f8ae25afe83154f8cfab
+        Path: /05-tries/10-discussion-questions.md
+      -
+        Type: Lesson
+        UID: 77cee066c6e87116f14b496879216237
+        Path: /05-tries/11-lab.md
+      -
+        Type: Lesson
+        UID: f33edb2c88ce7ca99c05acb7b6a93ebf
+        Path: /05-tries/12-whiteboard-questions.md
