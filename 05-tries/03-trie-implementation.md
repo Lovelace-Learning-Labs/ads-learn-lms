@@ -4,6 +4,10 @@
 
 By the end of this module, students will be able to...
 
+* **Identify** features of other data structures relevant to implementing a prefix dictionary
+* **Describe** the structure of a trie
+* **Explain** how the lookup and insert operations work on a trie
+
 ## Lesson Content
 
 # TODO PANOPTO

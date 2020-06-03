@@ -4,6 +4,9 @@
 
 By the end of this module, students will be able to...
 
+* **Name** the terms that affect trie performance
+* **Describe** the time and space complexity of trie operations using big-O notation
+
 ## Lesson Content
 
 # TODO PANOPTO
