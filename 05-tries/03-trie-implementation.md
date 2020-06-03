@@ -10,6 +10,13 @@ By the end of this module, students will be able to...
 
 ### Summary
 
+- Each node has one child for each radix in our code alphabet
+    - This number is the trie's **branching factor**
+- Each node stores a list of words matching that code
+- To lookup by code, walk down the trie one radix at a time
+    - Lookup by prefix: lookup, then gather all matches in the subtree
+    - Insert: lookup but create missing nodes
+
 ## Challenges
 
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
