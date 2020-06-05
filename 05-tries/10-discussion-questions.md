@@ -12,6 +12,7 @@ For each question we'll discuss in small groups, then as a big group
 1. What questions or comments do you have after watching the video lectures?
 1. What is the height of a trie?
 1. Would it be a good idea to use an array to store a trie like a heap? Why or why not?
+1. How would you delete a word from a trie?
 1. Consider a trie where the codes are in binary (1s and 0s)
     - What is the branching factor for such a trie?
     - How would you generate codes?

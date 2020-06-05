@@ -90,7 +90,7 @@ What kinds of records does a prefix dictionary store?
 
 ##### !answer
 
-* String codes and words
+* String codes and string words
 
 ##### !end-answer
 
