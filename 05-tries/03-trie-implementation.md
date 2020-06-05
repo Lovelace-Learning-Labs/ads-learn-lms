@@ -21,6 +21,32 @@ By the end of this module, students will be able to...
     - Lookup by prefix: lookup, then gather all matches in the subtree
     - Insert: lookup but create missing nodes
 
+### Lookup Pseudocode
+
+```ruby
+def lookupCode(code)
+  node = root
+  for radix in code
+    node = node.children[radix]
+    return [] if node is undefined
+  return node.words
+```
+
+### Insert Pseudocode
+
+```ruby
+def insert(word)
+  code = buildCode(word)
+  node = root
+
+  for radix in code
+    if node.children[radix] is undefined
+      node.children[radix] = new TrieNode()
+    node = node.children[radix]
+
+  node.words.push(word)
+```
+
 ## Challenges
 
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
