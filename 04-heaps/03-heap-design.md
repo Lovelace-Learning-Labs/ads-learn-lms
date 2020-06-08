@@ -84,7 +84,7 @@ A node's parent is at index \\( \lfloor{ i / 2 } \rfloor \\)
 
 ##### !question
 
-If a node in a heap is stored at index 7, at what index is its parent stored?
+If a node in a heap is stored at index 7, at what indices are its children stored?
 
 ##### !end-question
 
