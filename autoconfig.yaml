@@ -201,3 +201,42 @@ Standards:
         Type: Lesson
         UID: f33edb2c88ce7ca99c05acb7b6a93ebf
         Path: /05-tries/12-whiteboard-questions.md
+  -
+    Title: B Trees
+    Description: B Trees
+    UID: 1d4f43d30376019283adaadee4ad1b04
+    SuccessCriteria:
+      - success criteria
+    ContentFiles:
+      -
+        Type: Lesson
+        UID: f3b0fb96aa7dbf246be6c073c21388cf
+        Path: /06-b-trees/01-intro.md
+      -
+        Type: Lesson
+        UID: 4c42e8345cdc1ab2f72a5190d81ddab5
+        Path: /06-b-trees/02-memory-swapping.md
+      -
+        Type: Lesson
+        UID: a13d1e5002e970600bc6a6fba64ad7cf
+        Path: /06-b-trees/03-big-ordered-dictionary.md
+      -
+        Type: Lesson
+        UID: 0f63dc41c759b1614301e17dd5d187de
+        Path: /06-b-trees/04-b-tree-design.md
+      -
+        Type: Lesson
+        UID: 32b0e3637c64291c1add46302d7a814c
+        Path: /06-b-trees/05-b-tree-implementaion.md
+      -
+        Type: Lesson
+        UID: 07f32c5b2ece058eea129bc439ab90c3
+        Path: /06-b-trees/10-discussion-questions.md
+      -
+        Type: Lesson
+        UID: 42e93b94c8bda64671dc2e2e09e3dd08
+        Path: /06-b-trees/11-lab.md
+      -
+        Type: Lesson
+        UID: c2ed897ba0c5579c4da96711c7f98629
+        Path: /06-b-trees/12-whiteboard-questions.md
