@@ -65,7 +65,7 @@ How does increasing the minimum degree \\(t\\) affect the structure of a B-Tree?
 
 ##### !question
 
-How does the size of a key affect \\(t\\)?
+How does the size of a key affect a B-Tree's minimum degree \\(t\\)?
 
 ##### !end-question
 
