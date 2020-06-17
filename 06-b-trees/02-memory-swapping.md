@@ -10,8 +10,7 @@ By the end of this module, students will be able to...
 
 ## Lesson Content
 
-# TODO Panopto
-
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=3f5b83e4-595c-4ae9-8067-abdc013db044&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" width=720 height=405 style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ## Summary
 
@@ -20,6 +19,16 @@ By the end of this module, students will be able to...
 Memory is organized into fixed-size **pages** of a few KB each. To boost performance, secondary memory is always read / written in page.
 
 **Swapping** pages of main memory out to disk lets us pretend we have extra memory available.
+
+### Additional Reading
+
+If you want to learn more about secondary memory, you might find these resources interesting:
+
+- [The B-Trees chapter in CLRS Intro to Algorithms](http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap19.htm) starts with a discussion of how disk drives work
+- [Latency Numbers Every Programmer Should Know](https://gist.github.com/jboner/2841832)
+- UW Madison has an [excellent free textbook on operating systems](http://pages.cs.wisc.edu/~remzi/OSTEP/) available online, including
+    - [Intro to Virtual Memory and Paging](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf)
+    - [Intro to Disk Drives](http://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf)
 
 ## Challenges
 

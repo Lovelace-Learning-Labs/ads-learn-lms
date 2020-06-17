@@ -9,15 +9,19 @@ By the end of this module, students will be able to...
 
 ## Lesson Content
 
-# TODO Panopto
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=c1063507-9b92-41f9-91ca-abdd01259b85&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" width=720 height=405 style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ## Summary
 
 The minimum degree \\(t\\) has a big impact on a B-Tree's structure and performance
 
+- Large \\(t\\) `->` more records per node `->` fewer nodes
+- Large \\(t\\) `->` more children per node `->` shorter tree
+- If \\(t\\) is too big our tree starts to act like an array
+
 Our goal is to select \\(t\\) to **minimize the number of pages read on a walk from the root to a leaf**
 
-Idea: select \\(t\\) so that the **max size of a node** (\\(d=2t\\)) is as close to the **size of a page** as possible without going over
+Idea: select \\(t\\) so that the **max size of a node** (\\(d=2t\\)) is as close to the **size of a page** as possible without going over. Typical values of \\(t\\) are between 10 and 100.
 
 ## Challenges
 
