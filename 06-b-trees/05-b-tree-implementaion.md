@@ -111,3 +111,43 @@ How does a record end up in a non-leaf node in a B-Tree?
 ### !end-challenge
 
 <!-- ======================= END CHALLENGE ======================= -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: checkbox
+* id: 2400a750-0ccd-4753-8cab-59abe772c49c
+* title: Insert Progress
+
+##### !question
+
+Draw the results of inserting the keys
+
+```
+F, S, Q, K, C, L, H, T, V, W, M, R, N, P, A, B, X, Y, D, Z, E
+```
+
+in order into an empty B-Tree with minimum degree 2. Draw only the configurations of the tree just before some node must split, and also draw the final configuration.
+
+> From CLRS Introduction to Algorithms, 2009
+
+Use the [B-Tree visualizer](https://www.cs.usfca.edu/~galles/visualization/BTree.html) to check your work - make sure to set Max Degree to 4 and check "Preemptive Split".
+
+##### !end-question
+
+##### !options
+
+* I did it!
+
+##### !end-options
+
+##### !answer
+
+* I did it!
+
+##### !end-answer
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->

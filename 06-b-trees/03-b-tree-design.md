@@ -205,3 +205,53 @@ The maximum degree is always twice the minimum degree.
 ### !end-challenge
 
 <!-- ======================= END CHALLENGE ======================= -->
+<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
+<!-- Replace everything in square brackets [] and remove brackets  -->
+
+### !challenge
+
+* type: multiple-choice
+* id: 528678c2-114f-4d46-bbc5-a0d7b157e646
+* title: Valid B-Trees
+
+##### !question
+
+Draw all the valid B-Trees of minimum degree 2 containing the keys `[1, 2, 3, 4, 5]`. How many are there?
+
+##### !end-question
+
+##### !options
+
+* 1
+* 2
+* 3
+* 4
+* 5
+* 6
+
+##### !end-options
+
+##### !answer
+
+* 4
+
+##### !end-answer
+
+##### !hint
+
+Valid B-Trees must obey both the B-Tree property and the rule that all leaves must have the same depth.
+
+The roots of the 4 possible B-Trees contain the following keys:
+
+```
+2
+3
+4
+2, 4
+```
+
+##### !end-hint
+
+### !end-challenge
+
+<!-- ======================= END CHALLENGE ======================= -->
