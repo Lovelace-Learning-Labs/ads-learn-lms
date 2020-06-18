@@ -4,6 +4,10 @@
 
 By the end of this module, students will be able to...
 
+* **Implement** the B-Tree lookup and insert algorithms
+* **State** the runtime of those algorithms using big-O notation
+* **Describe** how the insert algorithm keeps a B-Tree balanced
+
 ## Lesson Content
 
 <iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=d341a60a-54c2-4327-a501-abdd013996e2&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" width=720 height=405 style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
