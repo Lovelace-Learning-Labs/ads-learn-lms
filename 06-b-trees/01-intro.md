@@ -11,3 +11,10 @@
 **Implementation:** B-Tree
 
 **Additional Consideration:** large-scale memory management
+
+## Visualizer
+
+
+[B-Tree visualizer](https://www.cs.usfca.edu/~galles/visualization/BTree.html)
+
+Their terminology is a bit different than ours. You'll have to set "Max Degree" to \\(2t\\) and check "Preemptive Split".

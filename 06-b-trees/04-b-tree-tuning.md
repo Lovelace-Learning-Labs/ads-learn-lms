@@ -4,8 +4,8 @@
 
 By the end of this module, students will be able to...
 
-* **Describe** the relationship between a B-Tree's minimum degree `\(t\)` and its height
-* **Calculate** an optimal value of `\(t\)` for a given page size and record structure
+* **Describe** the relationship between a B-Tree's minimum degree \\(t\\) and its height
+* **Calculate** an optimal value of \\(t\\) for a given page size and record structure
 
 ## Lesson Content
 
@@ -65,7 +65,7 @@ How does increasing the minimum degree \\(t\\) affect the structure of a B-Tree?
 
 * type: multiple-choice
 * id: 47b1bfe4-b232-4bf5-a9c3-44c9b6b978c0
-* title: Key size and \\(t\\)
+* title: Key size and minimum degree
 
 ##### !question
 

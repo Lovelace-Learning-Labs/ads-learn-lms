@@ -107,7 +107,7 @@ If a node in a heap is stored at index 7, at what indices are its children store
 
 ##### !hint
 
-A node's left child is at index `\(2 * i\)`, and its right child at index `\(2 * i + 1\)`
+A node's left child is at index \\(2 * i\\), and its right child at index \\(2 * i + 1\\)
 
 ##### !end-hint
 

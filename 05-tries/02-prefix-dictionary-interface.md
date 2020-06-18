@@ -19,7 +19,7 @@ Key operation: Lookup words by **code prefix**
 
 Goals:
 
-- Fast lookup (`\(O(c + m)\)` time for a code of length `\(c\)` resulting in `\(m\)` matches)
+- Fast lookup (\\(O(c + m)\\) time for a code of length \\(c\\) resulting in \\(m\\) matches)
 - Minimal storage space
 
 Note: this is a little different than what was in the video

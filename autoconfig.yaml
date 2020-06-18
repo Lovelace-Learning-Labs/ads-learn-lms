@@ -218,12 +218,12 @@ Standards:
         Path: /06-b-trees/02-memory-swapping.md
       -
         Type: Lesson
-        UID: a13d1e5002e970600bc6a6fba64ad7cf
-        Path: /06-b-trees/03-big-ordered-dictionary.md
+        UID: c68416aaf7bf74c33bed461fce1bce0a
+        Path: /06-b-trees/03-b-tree-design.md
       -
         Type: Lesson
-        UID: 0f63dc41c759b1614301e17dd5d187de
-        Path: /06-b-trees/04-b-tree-design.md
+        UID: d2894eb467d9cea9868be7af02c19b7d
+        Path: /06-b-trees/04-b-tree-tuning.md
       -
         Type: Lesson
         UID: 32b0e3637c64291c1add46302d7a814c

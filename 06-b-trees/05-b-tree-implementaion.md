@@ -116,7 +116,7 @@ How does a record end up in a non-leaf node in a B-Tree?
 
 ### !challenge
 
-* type: checkbox
+* type: multiple-choice
 * id: 2400a750-0ccd-4753-8cab-59abe772c49c
 * title: Insert Progress
 
@@ -139,6 +139,7 @@ Use the [B-Tree visualizer](https://www.cs.usfca.edu/~galles/visualization/BTree
 ##### !options
 
 * I did it!
+* I didn't do it :(
 
 ##### !end-options
 
